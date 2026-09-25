@@ -1,0 +1,21 @@
+name: Hello CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Say hello
+        run: echo "Hello from GitHub Actions!"
+
+      - name: List files in repository
+        run: ls -la
