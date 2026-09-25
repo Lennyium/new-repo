@@ -1,2 +1,2 @@
-New Line
+Hello from conflict-demo
 Bomboclaat
